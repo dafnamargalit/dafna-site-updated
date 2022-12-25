@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import React, { Suspense, useEffect, useState } from 'react';
 import styled from 'styled-components';
-import StarrySkies from 'components/Three/StarrySkies';
 import Link from 'next/link';
 import Image from 'next/image';
 import D from '/letters/D.svg';
@@ -11,17 +10,19 @@ import N from '/letters/N.svg';
 import AY from '/letters/A-Y.svg';
 import { theme } from 'theme';
 import Modal from 'components/Modal';
+import StarrySkies from 'components/Three/StarrySkies';
 
 export default function Home() {
 
-  const [modal, setModal] = useState(false);
+  const [modal, setModal] = useState(true);
   
-  	useEffect(() => {
-    if(localStorage.getItem('seen') !== 'true'){
-      localStorage.setItem('seen', 'true');
-      setModal(true);
-    }
-    });
+  	// useEffect(() => {
+    // if(localStorage.getItem('seen') !== 'true'){
+    //   console.log('not seen');
+    //   localStorage.setItem('seen', 'true');
+    //   setModal(true);
+    // }
+    // });
 
     const handleClose = () => {
       setModal(false);
@@ -34,9 +35,9 @@ export default function Home() {
         <meta name="description" content="Welcome to Dafna's Website" />
       </Head>
       <Container>
-      <StarrySkies />
+        <StarrySkies />
       <Content>
-        {modal && <Modal show={modal} onClose={() => handleClose()} />}
+        <Modal show={modal} onClose={() => handleClose()} />
         <WrapLogo>
           <Link href="/dates" style={{ textDecoration: 'none' }}>
 							<Letters src={D} alt="D" />
@@ -66,6 +67,7 @@ const Container = styled.div`
   height: 100vh;
   width: 100vw;
 `;
+
 
 const Content = styled.div`
   display: flex;

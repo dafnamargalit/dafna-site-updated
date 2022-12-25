@@ -24,6 +24,7 @@ export default function Modal(props) {
                     <Letters src={AP} alt="A" />
                 </LettersWrap>
                 <ModalContent>
+                    Join my mailing list!
                     <StyledMailchimp
                         action={'https://rocks.us7.list-manage.com/subscribe/post?u=f45ec644e1aa2a4677f388187&amp;id=9914a1fb1f&amp;f_id=001adbe4f0'}
                         fields={[
@@ -113,7 +114,7 @@ const StyledMailchimp = styled(Mailchimp)`
    flex-direction: column;
    align-items: center;
    justify-content: center;
-
+    width: 70%;
 input{
     margin: 1em;
     border: none;
