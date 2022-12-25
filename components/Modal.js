@@ -78,10 +78,15 @@ const Container = styled.div`
 const ModalBody = styled.div`
     display: flex;
     background-color: ${theme.COLOR.TEAL};
-    height: 50vh;
-    width: 50vh;
+    height: 500px;
+    width: 400px;
     border-radius: 10px;
     flex-direction: column;
+
+    @media (max-width: 768px) {
+        width: 300px;
+        height: 450px;
+    }
 `;
 
 const ModalContent = styled.div`

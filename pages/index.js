@@ -11,6 +11,8 @@ import AY from '/letters/A-Y.svg';
 import { theme } from 'theme';
 import Modal from 'components/Modal';
 import StarrySkies from 'components/Three/StarrySkies';
+import ProjectIcon from 'components/ProjectIcon';
+import VideoGame from 'images/ily.png';
 
 export default function Home() {
 
@@ -37,6 +39,11 @@ export default function Home() {
       <Container>
         <StarrySkies />
       <Content>
+        <VideoGameButtonWrap>
+          <Link href="/games">
+            <ProjectIcon src={VideoGame} />
+          </Link>
+        </VideoGameButtonWrap>
         <Modal show={modal} onClose={() => handleClose()} />
         <WrapLogo>
           <Link href="/dates" style={{ textDecoration: 'none' }}>
@@ -66,6 +73,14 @@ const Container = styled.div`
   padding: 0;
   height: 100vh;
   width: 100vw;
+`;
+
+const VideoGameButtonWrap = styled.div`
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
 `;
 
 
@@ -104,3 +119,4 @@ const Letters = styled(Image)`
 		padding: .2em;
 	}
 `;
+
