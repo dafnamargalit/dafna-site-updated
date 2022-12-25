@@ -35,6 +35,7 @@ export default function Home() {
       <Head>
         <title>Dafna</title>
         <meta name="description" content="Welcome to Dafna's Website" />
+         <link rel="shortcut icon" href="/D-square.png" />
       </Head>
       <Container>
         <StarrySkies />
@@ -109,7 +110,6 @@ const Letters = styled(Image)`
 	width: 17vh;
 	padding: 0.5em;
 	transition: transform .2s;
-
 	&:hover{
 		transform: scale(1.2);
 	}
