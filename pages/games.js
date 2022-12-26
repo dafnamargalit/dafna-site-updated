@@ -62,7 +62,18 @@ export default function Games(props) {
         </LeftArrowIconWrap>
       <Content>
         <WrapGameFrame>
+            <GameButtons>
+                <GameButton/>
+            </GameButtons>
             <GameFrame tabIndex={1} title="game" src="https://i.simmer.io/@dafna/i-love-you-the-game"></GameFrame>
+            <GameButtons>
+                <GameButton/>
+                <ButtonRow>
+                    <GameButton/>
+                    <GameButton/>
+                </ButtonRow>
+                <GameButton/>
+            </GameButtons>
         </WrapGameFrame>
         <Message>Please increase browser size to play game (desktop only game).</Message>
         <Description>
@@ -149,6 +160,7 @@ const Description = styled.div`
 
 const GameButtons  = styled.div`
     display: flex;
+    width: 160px;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -162,8 +174,8 @@ const ButtonRow = styled.div`
 `;
 
 const GameButton = styled.button`
-    width:50px;
-    height:50px;
+    width:60px;
+    height:60px;
     margin: 10px;
     text-align: center;
     cursor: pointer;
@@ -176,6 +188,9 @@ const GameButton = styled.button`
     transform: ${props => props.pressed === true ? 'translateY(4px)' : 'translateY(0)'};
     font-family: ${theme.FONT.FAMILY};
     font-weight: ${theme.FONT.WEIGHT};
+    &:hover {
+    background-color: ${theme.COLOR.LIGHT_PINK};
+    }
     &:active {
     box-shadow: 0 5px #c9447e;
     transform: translateY(4px);
