@@ -31,7 +31,6 @@ export default function Home() {
         <meta name="description" content="Welcome to Dafna's Website" />
          <link rel="shortcut icon" href="/D-square.png" />
       </Head>
-        {console.log(StarrySkies)}
         <StarrySkies />
       <Content>
         <VideoGameButtonWrap>

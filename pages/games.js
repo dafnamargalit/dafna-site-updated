@@ -188,7 +188,7 @@ const LeftArrowIconWrap = styled.div`
   top: 0;
   left: 0;
   margin: 1em;
-  z-index: 9999;
+  z-index: 10000;
 `;
 
 const LeftArrowIcon = styled(IconLeftArrow)`
