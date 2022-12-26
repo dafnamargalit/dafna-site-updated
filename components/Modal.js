@@ -134,6 +134,7 @@ button{
     border: none;
     margin: 1em;
     font-size: large;
+    color: ${theme.COLOR.PINKER_PINK};
 }
 
 button:hover{

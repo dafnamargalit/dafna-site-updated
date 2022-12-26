@@ -14,7 +14,6 @@ export default function Home() {
   
   	useEffect(() => {
     if(localStorage.getItem('seen') === 'true'){
-      console.log('not seen hi', localStorage.getItem('seen'));
       localStorage.setItem('seen', 'true');
       setModal(false);
     }
@@ -34,9 +33,7 @@ export default function Home() {
         <StarrySkies />
       <Content>
         <VideoGameButtonWrap>
-          <Link href="/games">
-            <ProjectIcon src={VideoGame} />
-          </Link>
+            <ProjectIcon src={VideoGame} href="/games"/>
         </VideoGameButtonWrap>
         <Modal show={modal} onClose={() => handleClose()} />
         <Navbar />
