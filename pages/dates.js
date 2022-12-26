@@ -45,8 +45,8 @@ export default function Dates() {
                 </Header>
                 <Body>
                     {(shows.length > 0) ? shows.map((show, i) => (
-                        <ListWrapper>
-                        <ListItem key={i}>
+                        <ListWrapper key={i}>
+                        <ListItem>
                            
                             <ShowDate>{show.date}</ShowDate>
                          <ShowTitle>{show.title}</ShowTitle>
