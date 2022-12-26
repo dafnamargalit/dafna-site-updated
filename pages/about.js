@@ -18,7 +18,8 @@ export default function About(){
     return (
         <Container>
             <StarrySkies />
-            <NavbarHeader>
+            <Content>
+                <NavbarHeader>
                 <Navbar width={"5vh"} padding={"0.2em"} />
             </NavbarHeader>
             <LeftArrowIconWrap>
@@ -26,7 +27,6 @@ export default function About(){
                     <LeftArrowIcon />
                 </Link>
             </LeftArrowIconWrap>
-            <Content>
                 <Title>
                     <Letter src={A}></Letter>
                     <SmallerLetter src={B}></SmallerLetter>
@@ -55,11 +55,16 @@ const Container = styled.div`
 `;
 
 const NavbarHeader = styled.div`
-    width: 100vw;
+    width: 50px;
     position: absolute;
-    top: -50px;
-    z-index: 10001;
-`
+    top: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    z-index: 10002;
+`;
+
 
 const LeftArrowIconWrap = styled.div`
   width: 50px;
@@ -103,7 +108,7 @@ const Title = styled.div`
     font-size: 24px;
     width: 100%;
     position: absolute;
-    top: 170px;
+    top: 130px;
     justify-content: center;
     height: 105px;
     z-index: 10001;

@@ -16,7 +16,9 @@ export default function Apparel() {
     return(
         <ApparelWrap>
             <StarrySkies />
-        <NavbarHeader>
+       
+        <Content>
+             <NavbarHeader>
             <Navbar width={"5vh"} padding={"0.2em"} />
         </NavbarHeader>
         <LeftArrowIconWrap>
@@ -24,7 +26,6 @@ export default function Apparel() {
                 <LeftArrowIcon />
             </Link>
         </LeftArrowIconWrap>
-        <Content>
         <Header>
             <Title>
                 <Letter src={A}></Letter>
@@ -50,14 +51,20 @@ export default function Apparel() {
 }
 
 const ApparelWrap = styled.div`
-    height: 100vh;
-    width: 100vw;
+margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
 `
 const NavbarHeader = styled.div`
-    width: 100vw;
+    width: 50px;
     position: absolute;
-    top: -50px;
-    z-index: 10001;
+    top: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    z-index: 10002;
 `
 const Header = styled.div`
     display: flex;
@@ -94,10 +101,11 @@ const Title = styled.div`
     }
 `
 const Content = styled.div`
-    display: flex;
+  display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100vw;
+    height: 100vh;
     align-items: center;
     color: white;
     top: 50%;

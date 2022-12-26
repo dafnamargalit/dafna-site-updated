@@ -24,7 +24,8 @@ export default function News() {
     return(
         <NewsWrap>
             <StarrySkies />
-            <NavbarHeader>
+        <Content>
+             <NavbarHeader>
                 <Navbar width={"5vh"} padding={"0.2em"} />
             </NavbarHeader>
             <LeftArrowIconWrap>
@@ -32,7 +33,6 @@ export default function News() {
                     <LeftArrowIcon />
                 </Link>
             </LeftArrowIconWrap>
-        <Content>
         <Header>
             <Title>  
                 <Letter src={N} alt="N"></Letter>
@@ -57,11 +57,16 @@ const NewsWrap = styled.div`
     overflow: scroll;
 `
 const NavbarHeader = styled.div`
-    width: 100vw;
+    width: 50px;
     position: absolute;
-    top: -50px;
-    z-index: 10001;
-`
+    top: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    z-index: 10002;
+`;
+
 const Header = styled.div`
     display: flex;
     justify-content: space-between;
@@ -105,6 +110,7 @@ const Content = styled.div`
     flex-direction: column;
     justify-content: center;
     width: 100vw;
+    height: 100vh;
     align-items: center;
     color: white;
     top: 50%;
