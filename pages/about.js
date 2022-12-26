@@ -1,19 +1,18 @@
-import React from "react";
-import styled from "styled-components";
-import StarrySkies from "components/Three/StarrySkies";
 import Navbar from "components/Navbar";
-import Link from "next/link";
+import StarrySkies from "components/Three/StarrySkies";
 import { IconLeftArrow } from "icons";
-import { theme } from "theme";
-import A from 'letters/A-P.svg';
-import B from 'letters/B-P.svg';
-import O from 'letters/O-P.svg';
-import U from 'letters/U-P.svg';
-import T from 'letters/T-P.svg';
-import Image from "next/image";
 import daf from 'images/daf.png';
 import daf2 from 'images/daf2.png';
 import daf3 from 'images/daf3.png';
+import A from 'letters/A-P.svg';
+import B from 'letters/B-P.svg';
+import O from 'letters/O-P.svg';
+import T from 'letters/T-P.svg';
+import U from 'letters/U-P.svg';
+import Image from "next/image";
+import Link from "next/link";
+import styled from "styled-components";
+import { theme } from "theme";
 
 export default function About(){
     return (

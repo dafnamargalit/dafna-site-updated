@@ -98,19 +98,7 @@ const Frame = styled(Image)`
         width: 100vw;
     }
 `
-const Body = styled.div`
-    height: 70vh;
-    display: flex;
-    top: 30vh;
-    align-items: center;
-    justify-content:center;
-    flex-direction: column;
-    @media (max-width: 1200px){
-        top: 0;
-        height: 50vh;
-        display: flex;
-    }
-`
+
 const VideoWrap = styled.div`
     display: flex;
     width: 53vw;

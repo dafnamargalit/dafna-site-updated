@@ -1,16 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
+import Navbar from 'components/Navbar';
 import StarrySkies from 'components/Three/StarrySkies';
-import D from 'letters/D.svg';
+import { IconLeftArrow } from 'icons';
 import A from 'letters/A-P.svg';
-import T from 'letters/T-P.svg';
+import D from 'letters/D.svg';
 import E from 'letters/E-P.svg';
 import S from 'letters/S-P.svg';
+import T from 'letters/T-P.svg';
 import Image from 'next/image';
-import { theme } from 'theme';
-import Navbar from 'components/Navbar';
-import { IconLeftArrow } from 'icons';
 import Link from 'next/link';
+import styled from 'styled-components';
+import { theme } from 'theme';
+
 const shows = [
     // {
     //     title: 'Adam Melchor with Dafna at Gothic Theatre',
@@ -218,14 +218,6 @@ const Divider = styled.div`
     margin: 10px;
 `;
 
-const Section = styled.div`
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-`
-
 const Nothing = styled.div`
     display: flex;  
     flex-direction: column;
@@ -233,17 +225,6 @@ const Nothing = styled.div`
     justify-content: center;
     padding: 1em;
     height: 10vh;
-`
-
-const End = styled.div`
-    display: none;
-    @media (max-width: 800px){
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 5vh;
-        width: 100vw;
-    }
 `
 
 const LeftArrowIconWrap = styled.div`

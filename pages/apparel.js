@@ -1,17 +1,16 @@
-import React from 'react';
 import Navbar from 'components/Navbar';
-import styled from 'styled-components';
+import StarrySkies from 'components/Three/StarrySkies';
+import { IconLeftArrow } from 'icons';
 import merch from 'images/merch.png';
 import A from 'letters/A-Y.svg';
-import P from 'letters/P-Y.svg';
-import R from 'letters/R-Y.svg';
 import E from 'letters/E-Y.svg';
 import L from 'letters/L-Y.svg';
-import StarrySkies from 'components/Three/StarrySkies';
+import P from 'letters/P-Y.svg';
+import R from 'letters/R-Y.svg';
 import Image from 'next/image';
-import { IconLeftArrow } from 'icons';
-import { theme } from 'theme';
 import Link from 'next/link';
+import styled from 'styled-components';
+import { theme } from 'theme';
 
 export default function Apparel() {
     return(

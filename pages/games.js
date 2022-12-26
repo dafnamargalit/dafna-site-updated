@@ -1,10 +1,10 @@
-import Head from 'next/head';
-import React, { Suspense, useEffect, useState } from 'react';
-import styled from 'styled-components';
-import Link from 'next/link';
-import { theme } from 'theme';
 import StarrySkies from 'components/Three/StarrySkies';
 import { IconLeftArrow } from 'icons';
+import Head from 'next/head';
+import Link from 'next/link';
+import { useState } from 'react';
+import styled from 'styled-components';
+import { theme } from 'theme';
 
 export default function Games(props) {
 
