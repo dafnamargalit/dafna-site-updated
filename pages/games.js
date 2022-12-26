@@ -2,12 +2,8 @@ import Head from 'next/head';
 import React, { Suspense, useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
-import Image from 'next/image';
 import { theme } from 'theme';
-import Modal from 'components/Modal';
 import StarrySkies from 'components/Three/StarrySkies';
-import ProjectIcon from 'components/ProjectIcon';
-import VideoGame from 'images/ily.png';
 import { IconLeftArrow } from 'icons';
 
 export default function Games(props) {
@@ -22,35 +18,35 @@ export default function Games(props) {
     //     document.addEventListener('keyup', handleKeyUp);
     // });
 
-    const handleKeyDown = (e) => {
-        if (e.keyCode === 38) {
-            setJumpKey(true);
-        }
-        else if (e.keyCode === 39) {
-            setRightKey(true);
-        }
-        else if (e.keyCode === 37) {
-            setLeftKey(true);
-        }
-        else if (e.keyCode === 32) {
-            setShootKey(true);
-        }
-    };
+    // const handleKeyDown = (e) => {
+    //     if (e.keyCode === 38) {
+    //         setJumpKey(true);
+    //     }
+    //     else if (e.keyCode === 39) {
+    //         setRightKey(true);
+    //     }
+    //     else if (e.keyCode === 37) {
+    //         setLeftKey(true);
+    //     }
+    //     else if (e.keyCode === 32) {
+    //         setShootKey(true);
+    //     }
+    // };
 
-    const handleKeyUp = (e) => {
-        if (e.keyCode === 38) {
-            setJumpKey(false);
-        }
-        else if (e.keyCode === 39) {
-            setRightKey(false);
-        }
-        else if (e.keyCode === 37) {
-            setLeftKey(false);
-        }
-        else if (e.keyCode === 32) {
-            setShootKey(false);
-        }
-    };
+    // const handleKeyUp = (e) => {
+    //     if (e.keyCode === 38) {
+    //         setJumpKey(false);
+    //     }
+    //     else if (e.keyCode === 39) {
+    //         setRightKey(false);
+    //     }
+    //     else if (e.keyCode === 37) {
+    //         setLeftKey(false);
+    //     }
+    //     else if (e.keyCode === 32) {
+    //         setShootKey(false);
+    //     }
+    // };
 
     return (
         <Suspense fallback={<Container>Loading...</Container>}>
@@ -67,7 +63,7 @@ export default function Games(props) {
         </LeftArrowIconWrap>
       <Content>
         <WrapGameFrame>
-            <GameFrame tabIndex={1} title="game" onKeyDown={e => console.log(e)} src="https://i.simmer.io/@dafna/i-love-you-the-game"></GameFrame>
+            <GameFrame tabIndex={1} title="game" src="https://i.simmer.io/@dafna/i-love-you-the-game"></GameFrame>
         </WrapGameFrame>
         <Message>Please increase browser size to play game (desktop only game).</Message>
         <Description>
@@ -147,6 +143,9 @@ const Description = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
+    @media (max-width: 1200px) {
+        display: none;
+    }
 `;
 
 const GameButtons  = styled.div`

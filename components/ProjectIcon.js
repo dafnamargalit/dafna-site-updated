@@ -9,7 +9,7 @@ export default function ProjectIcon(props) {
 
 const Container = styled(Image)`
   height:  150px;
-  width: auto;
+  width: 150px;
   filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
    @media (hover: hover) {
     :hover {

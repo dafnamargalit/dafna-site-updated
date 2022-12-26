@@ -1,5 +1,5 @@
 import { Canvas } from '@react-three/fiber';
-import React, { Suspense, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import OrbitControls from '/components/Three/OrbitControls';
 import Stars from '/components/Three/Stars';
@@ -7,7 +7,6 @@ import { theme } from 'theme';
 
 export default function StarrySkies() {
   return (
-    <Suspense fallback={<Container>Loading...</Container>}>
       <Container>
       <StyledCanvas
        shadows={true}
@@ -24,7 +23,6 @@ export default function StarrySkies() {
           <OrbitControls />
       </StyledCanvas>
       </Container>
-    </Suspense>
   )
 }
 

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import React, { Suspense, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -8,7 +8,6 @@ import AP from '/letters/A-P.svg';
 import F from '/letters/F.svg';
 import N from '/letters/N.svg';
 import AY from '/letters/A-Y.svg';
-import { theme } from 'theme';
 import Modal from 'components/Modal';
 import StarrySkies from 'components/Three/StarrySkies';
 import ProjectIcon from 'components/ProjectIcon';
@@ -18,26 +17,25 @@ export default function Home() {
 
   const [modal, setModal] = useState(true);
   
-  	// useEffect(() => {
-    // if(localStorage.getItem('seen') !== 'true'){
-    //   console.log('not seen');
-    //   localStorage.setItem('seen', 'true');
-    //   setModal(true);
-    // }
-    // });
+  	useEffect(() => {
+    if(localStorage.getItem('seen') === 'true'){
+      console.log('not seen hi', localStorage.getItem('seen'));
+      localStorage.setItem('seen', 'true');
+      setModal(false);
+    }
+    });
 
     const handleClose = () => {
       setModal(false);
     };
 
   return (
-    <Suspense fallback={<Container>Loading...</Container>}>
-      <Head>
+      <Container>
+        <Head>
         <title>Dafna</title>
         <meta name="description" content="Welcome to Dafna's Website" />
          <link rel="shortcut icon" href="/D-square.png" />
       </Head>
-      <Container>
         <StarrySkies />
       <Content>
         <VideoGameButtonWrap>
@@ -65,7 +63,6 @@ export default function Home() {
         </WrapLogo>
       </Content>
       </Container>
-    </Suspense>
   )
 }
 
