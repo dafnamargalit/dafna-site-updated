@@ -87,19 +87,17 @@ const Letter = styled(Image)`
 
 const NavbarHeader = styled.div`
     width: 50px;
-    position: absolute;
     top: 0px;
+    margin: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1em;
     z-index: 10002;
 `;
 
 const Content = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 100vw;
     height: 100vh;
     align-items: center;
@@ -235,7 +233,7 @@ const Nothing = styled.div`
 const LeftArrowIconWrap = styled.div`
   width: 50px;
   position: absolute;
-  top: 0;
+  top: 30px;
   left: 0;
   margin: 1em;
   z-index: 10002;

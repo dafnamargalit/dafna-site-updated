@@ -20,7 +20,7 @@ export default function Footage() {
         <FootageWrap>
             <StarrySkies />
         <Content>
-            <NavbarHeader>
+        <NavbarHeader>
             <Navbar width={"5vh"} padding={"0.2em"} />
         </NavbarHeader>
         <LeftArrowIconWrap>
@@ -28,6 +28,7 @@ export default function Footage() {
                 <LeftArrowIcon />
             </Link>
         </LeftArrowIconWrap>
+        <Header>
              <Title> 
                 <Letter src={F} alt="F" priority></Letter>
                 <Letter src={O} alt="O" priority></Letter>
@@ -37,6 +38,7 @@ export default function Footage() {
                 <Letter src={G} alt="G" priority></Letter>
                 <Letter src={E} alt="E" priority></Letter>
             </Title>
+        </Header>
             <VideoWrap>
                 <Frame src={frame} width={"100%"}/>
                 <YoutubeEmbed embedId="hZ1g_RTNSoA"></YoutubeEmbed>
@@ -61,19 +63,17 @@ const FootageWrap = styled.div`
 
 const NavbarHeader = styled.div`
     width: 50px;
-    position: absolute; 
-    top: 0;
+    top: 0px;
+    margin: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1em;
     z-index: 10002;
 `;
 
 const Content = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 100vw;
     height: 100vh;
     align-items: center;
@@ -85,12 +85,24 @@ const Content = styled.div`
     z-index: 9999;
 `;
 
+const Header = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 10vh;
+    transition: all 0.5s ease 0s;
+    user-select: none;
+    @media (max-width: 800px){
+        height: 5vh;
+    }
+`
 const Title = styled.div`
     display: flex;
     align-items: center;
     font-weight: 700;
     color: #ffdd00;
-    margin-top: 7vh;
     text-align: center;
     font-size: 24px;
     width: 100%;
@@ -143,7 +155,7 @@ const Letter = styled(Image)`
 const LeftArrowIconWrap = styled.div`
   width: 50px;
   position: absolute;
-  top: 10px;
+  top: 30px;
   left: 0;
   margin: 1em;
   z-index: 10002;

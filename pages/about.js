@@ -27,6 +27,7 @@ export default function About(){
                     <LeftArrowIcon />
                 </Link>
             </LeftArrowIconWrap>
+            <Header>
                 <Title>
                     <Letter src={A}></Letter>
                     <SmallerLetter src={B}></SmallerLetter>
@@ -34,6 +35,7 @@ export default function About(){
                     <Letter src={U}></Letter>
                     <Letter src={T}></Letter>
                 </Title> 
+            </Header>
                 <PictureWrap>
                     <DafProfPic src={daf2} priority/>
                     <DafProfPic src={daf} priority/> 
@@ -56,20 +58,47 @@ const Container = styled.div`
 
 const NavbarHeader = styled.div`
     width: 50px;
-    position: absolute;
     top: 0px;
+    margin: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1em;
     z-index: 10002;
 `;
 
+const Content = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 9999;
+`;
+
+
+const Header = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 5vh;
+    transition: all 0.5s ease 0s;
+    user-select: none;
+    @media (max-width: 800px){
+        height: 5vh;
+    }
+`;
 
 const LeftArrowIconWrap = styled.div`
   width: 50px;
   position: absolute;
-  top: 0;
+  top: 30px;
   left: 0;
   margin: 1em;
   z-index: 10002;
@@ -84,20 +113,6 @@ const LeftArrowIcon = styled(IconLeftArrow)`
     }
 `;
 
-const Content = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
-    color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    z-index: 9999;
-`;
 
 const Title = styled.div`
     display: flex;
@@ -107,7 +122,6 @@ const Title = styled.div`
     text-align: center;
     font-size: 24px;
     width: 100%;
-    position: absolute;
     top: 130px;
     justify-content: center;
     height: 105px;

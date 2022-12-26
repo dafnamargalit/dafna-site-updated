@@ -58,14 +58,27 @@ margin: 0;
 `
 const NavbarHeader = styled.div`
     width: 50px;
-    position: absolute;
     top: 0px;
+    margin: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1em;
     z-index: 10002;
-`
+`;
+
+const Content = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 9999;
+`;
 const Header = styled.div`
     display: flex;
     justify-content: space-between;
@@ -100,20 +113,6 @@ const Title = styled.div`
     font-size: 20px;
     }
 `
-const Content = styled.div`
-  display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
-    color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    z-index: 9999;
-`;
 
 const Body = styled.div`
     display: flex;
@@ -143,7 +142,7 @@ const TextLink = styled.a`
 const LeftArrowIconWrap = styled.div`
   width: 50px;
   position: absolute;
-  top: 0;
+  top: 30px;
   left: 0;
   margin: 1em;
   z-index: 10002;
