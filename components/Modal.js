@@ -69,7 +69,7 @@ const Container = styled.div`
     height: 100vh;
     width: 100vw;
     position: absolute;
-    z-index: 10000;
+    z-index: 10009;
     justify-content: center;
     align-items: center;
     display: ${props => props.show ? 'flex' : 'none'};
