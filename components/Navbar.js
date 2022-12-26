@@ -42,6 +42,7 @@ const Letters = styled(Image)`
 	z-index: 1000;
 	width: ${props => props.width ? props.width : '17vh'};
 	padding: ${props => props.padding ? props.padding : '0.5em'};
+    height: auto;
 	transition: transform .2s;
 	&:hover{
 		transform: scale(1.2);

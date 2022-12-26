@@ -61,8 +61,8 @@ const FootageWrap = styled.div`
 
 const NavbarHeader = styled.div`
     width: 50px;
-    position: absolute;
-    top: -80px;
+    position: absolute; 
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;

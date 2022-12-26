@@ -58,6 +58,10 @@ const VideoGameButtonWrap = styled.div`
   width: 100vw;
   display: flex;
   justify-content: flex-end;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 

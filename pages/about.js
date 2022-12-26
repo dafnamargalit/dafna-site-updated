@@ -57,7 +57,7 @@ const Container = styled.div`
 const NavbarHeader = styled.div`
     width: 50px;
     position: absolute;
-    top: -80px;
+    top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
