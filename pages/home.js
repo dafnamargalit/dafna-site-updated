@@ -1,17 +1,13 @@
-import Head from 'next/head';
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import Link from 'next/link';
-import Image from 'next/image';
-import D from '/letters/D.svg';
-import AP from '/letters/A-P.svg';
-import F from '/letters/F.svg';
-import N from '/letters/N.svg';
-import AY from '/letters/A-Y.svg';
 import Modal from 'components/Modal';
-import StarrySkies from 'components/Three/StarrySkies';
+import Navbar from 'components/Navbar';
 import ProjectIcon from 'components/ProjectIcon';
+import StarrySkies from 'components/Three/StarrySkies';
 import VideoGame from 'images/ily.png';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import styled from 'styled-components';
 
 export default function Home() {
 
@@ -45,23 +41,7 @@ export default function Home() {
           </Link>
         </VideoGameButtonWrap>
         <Modal show={modal} onClose={() => handleClose()} />
-        <WrapLogo>
-          <Link href="/dates" style={{ textDecoration: 'none' }}>
-							<Letters src={D} alt="D" />
-						</Link>
-						<Link href="/apparel" style={{ textDecoration: 'none' }}>
-							<Letters src={AY} alt="A" />
-						</Link>
-						<Link href="/footage" style={{ textDecoration: 'none' }}>
-							<Letters src={F} alt="F" />
-						</Link>
-						<Link href="/news" style={{ textDecoration: 'none' }}>
-							<Letters src={N} alt="N" />
-						</Link>
-						<Link href="/about" style={{ textDecoration: 'none' }}>
-							<Letters src={AP} alt="A" />
-						</Link>
-        </WrapLogo>
+        <Navbar />
       </Content>
       </Container>
   )
@@ -94,27 +74,5 @@ const Content = styled.div`
   transform: translate(-50%, -50%);
   position: absolute;
   z-index: 9999;
-`;
-
-const WrapLogo = styled.div`
-  display: flex;
-	align-items: center;
-	justify-content: center;
-`;
-
-const Letters = styled(Image)`
-	will-change: transform;
-	z-index: 1000;
-	width: 17vh;
-	padding: 0.5em;
-	transition: transform .2s;
-	&:hover{
-		transform: scale(1.2);
-	}
-
-	@media (max-width: 1024px) { 
-		width: 6vh;
-		padding: .2em;
-	}
 `;
 

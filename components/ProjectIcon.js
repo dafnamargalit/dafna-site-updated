@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function ProjectIcon(props) {
     return (
-        <Container src={props.src}/>
+        <Container src={props.src} alt="videogame" />
     );
 } 
 

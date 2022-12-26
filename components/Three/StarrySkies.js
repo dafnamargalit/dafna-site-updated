@@ -1,5 +1,5 @@
 import { Canvas } from '@react-three/fiber';
-import React from 'react';
+import React, { Suspense, useState } from 'react';
 import styled from 'styled-components';
 import OrbitControls from '/components/Three/OrbitControls';
 import Stars from '/components/Three/Stars';

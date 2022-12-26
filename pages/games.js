@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { theme } from 'theme';
 import StarrySkies from 'components/Three/StarrySkies';
 import { IconLeftArrow } from 'icons';
+import Spotify from 'react-spotify-embed';
 
 export default function Games(props) {
 
@@ -49,15 +50,14 @@ export default function Games(props) {
     // };
 
     return (
-        <Suspense fallback={<Container>Loading...</Container>}>
-        <Head>
-        <title>Dafna - Games</title>
-        <meta name="description" content="Welcome to Dafna's Website" />
-      </Head>
       <Container>
+        <Head>
+            <title>Dafna - Games</title>
+            <meta name="description" content="Welcome to Dafna's Website" />
+        </Head>
         <StarrySkies />
         <LeftArrowIconWrap>
-            <Link href="/">
+            <Link href="/home">
                 <LeftArrowIcon />
             </Link>
         </LeftArrowIconWrap>
@@ -71,10 +71,11 @@ export default function Games(props) {
             </>
             
             <b>CONTROLS: ARROW KEYS L+R to RUN. UP ARROW KEY to JUMP. SPACE BAR to SHOOT.</b>
+            <i>if arrow keys aren't doing anything, click on the game with your mouse and try again!</i>
         </Description>
-      </Content>
+         <SpotifyEmbed src="https://open.spotify.com/embed/album/3z1mhGTHvcCKbglmGsCS4y?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></SpotifyEmbed>
+         </Content>
       </Container>
-    </Suspense>
     );
 }
 
@@ -116,6 +117,7 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
   color: white;
+  width: 90%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -134,7 +136,7 @@ const Message = styled.div`
 `;
 
 const Description = styled.div`
-    width: 960px;
+    width: 90%;
     padding: 20px;
     margin: 20px;
     background-color: ${theme.COLOR.PINK_OPACITY};
@@ -143,9 +145,7 @@ const Description = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
-    @media (max-width: 1200px) {
-        display: none;
-    }
+
 `;
 
 const GameButtons  = styled.div`
@@ -184,7 +184,7 @@ const GameButton = styled.button`
 `;
 
 const LeftArrowIconWrap = styled.div`
-  width: 100%;
+  width: 50px;
   position: absolute;
   top: 0;
   left: 0;
@@ -200,3 +200,10 @@ const LeftArrowIcon = styled(IconLeftArrow)`
         stroke: ${theme.COLOR.HOT_PINK};
     }
 `;
+
+const SpotifyEmbed = styled.iframe`
+    border-radius: 12px;
+    width: 75%;
+    height: 80px;
+    border-color: ${theme.COLOR.HOT_PINK};
+`

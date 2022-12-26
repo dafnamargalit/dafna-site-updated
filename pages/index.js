@@ -15,11 +15,14 @@ export default function Index() {
         <meta name="description" content="Welcome to Dafna's Website" />
          <link rel="shortcut icon" href="/D-square.png" />
       </Head>
-      <Link href="/home">
-       {clicked ? <Text>ENTERING...</Text> : <WelcomeButton onClick={() => setClicked(true)}>
+    
+       {clicked ? <Text>ENTERING...</Text> : 
+       <Link href="/home">
+        <WelcomeButton onClick={() => setClicked(true)}>
          CLICK HERE TO ENTER DAFNA'S WEBSITE
-        </WelcomeButton>}
-      </Link>
+        </WelcomeButton>
+        </Link>}
+
       </Container>
   )
 }
