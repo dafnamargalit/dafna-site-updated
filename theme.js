@@ -10,7 +10,7 @@ const COLOR = {
     LIGHT_PINK: "#ffaacf",
     PINKER_PINK: "#fa7fb5",
     PALE_PINK: "rgb(255, 217, 235)",
-    PINK_OPACITY: "rgb(255, 170, 207, 0.6)",
+    PINK_OPACITY: "rgb(255, 170, 207, 0.8)",
     PALE_PINK_HOVER: "rgb(253, 229, 240)",
     MAIN_TEAL: "#7febf6",
     LIME: "#3fff43",
