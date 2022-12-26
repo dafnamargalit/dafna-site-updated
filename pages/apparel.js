@@ -1,25 +1,26 @@
 import React from 'react';
-import Navbar from '/components/Navbar';
+import Navbar from 'components/Navbar';
 import styled from 'styled-components';
-import merch from '/images/merch.png';
-import A from '/letters/A-Y.svg';
-import P from '/letters/P-Y.svg';
-import R from '/letters/R-Y.svg';
-import E from '/letters/E-Y.svg';
-import L from '/letters/L-Y.svg';
+import merch from 'images/merch.png';
+import A from 'letters/A-Y.svg';
+import P from 'letters/P-Y.svg';
+import R from 'letters/R-Y.svg';
+import E from 'letters/E-Y.svg';
+import L from 'letters/L-Y.svg';
 import StarrySkies from 'components/Three/StarrySkies';
 import Image from 'next/image';
 import { IconLeftArrow } from 'icons';
 import { theme } from 'theme';
 import Link from 'next/link';
-const Apparel = () => {
+
+export default function Apparel() {
     return(
         <ApparelWrap>
             <StarrySkies />
         <NavbarHeader>
             <Navbar width={"5vh"} padding={"0.2em"} />
         </NavbarHeader>
-                     <LeftArrowIconWrap>
+        <LeftArrowIconWrap>
             <Link href="/home">
                 <LeftArrowIcon />
             </Link>
@@ -149,5 +150,3 @@ const LeftArrowIcon = styled(IconLeftArrow)`
         stroke: ${theme.COLOR.HOT_PINK};
     }
 `;
-
-export default Apparel;

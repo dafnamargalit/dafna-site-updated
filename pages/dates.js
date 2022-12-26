@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import StarrySkies from 'components/Three/StarrySkies';
-import D from '/letters/D.svg';
-import A from '/letters/A-P.svg';
-import T from '/letters/T-P.svg';
-import E from '/letters/E-P.svg';
-import S from '/letters/S-P.svg';
+import D from 'letters/D.svg';
+import A from 'letters/A-P.svg';
+import T from 'letters/T-P.svg';
+import E from 'letters/E-P.svg';
+import S from 'letters/S-P.svg';
 import Image from 'next/image';
 import { theme } from 'theme';
 import Navbar from 'components/Navbar';

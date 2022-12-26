@@ -4,7 +4,6 @@ import ProjectIcon from 'components/ProjectIcon';
 import StarrySkies from 'components/Three/StarrySkies';
 import VideoGame from 'images/ily.png';
 import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';

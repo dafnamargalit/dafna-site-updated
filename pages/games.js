@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { theme } from 'theme';
 import StarrySkies from 'components/Three/StarrySkies';
 import { IconLeftArrow } from 'icons';
-import Spotify from 'react-spotify-embed';
 
 export default function Games(props) {
 
