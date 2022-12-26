@@ -29,13 +29,13 @@ export default function Footage() {
             </Link>
         </LeftArrowIconWrap>
              <Title> 
-                <Letter src={F} alt="F"></Letter>
-                <Letter src={O} alt="O"></Letter>
-                <Letter src={O} alt="O"></Letter>
-                <Letter src={T} alt="T"></Letter>
-                <Letter src={A} alt="A"></Letter>
-                <Letter src={G} alt="G"></Letter>
-                <Letter src={E} alt="E"></Letter>
+                <Letter src={F} alt="F" priority></Letter>
+                <Letter src={O} alt="O" priority></Letter>
+                <Letter src={O} alt="O" priority></Letter>
+                <Letter src={T} alt="T" priority></Letter>
+                <Letter src={A} alt="A" priority></Letter>
+                <Letter src={G} alt="G" priority></Letter>
+                <Letter src={E} alt="E" priority></Letter>
             </Title>
             <VideoWrap>
                 <Frame src={frame} width={"100%"}/>

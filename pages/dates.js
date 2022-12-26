@@ -36,11 +36,11 @@ export default function Dates() {
             </LeftArrowIconWrap>
                 <Header>
                     <Title>
-                        <Letter src={D} alt="D"/>
-                        <Letter src={A} alt="A"/>
-                        <Letter src={T} alt="T"/>
-                        <Letter src={E} alt="E"/>
-                        <Letter src={S} alt="S"/>
+                        <Letter src={D} alt="D" priority/>
+                        <Letter src={A} alt="A" priority/>
+                        <Letter src={T} alt="T" priority/>
+                        <Letter src={E} alt="E" priority/>
+                        <Letter src={S} alt="S" priority/>
                     </Title>
                 </Header>
                 <Body>

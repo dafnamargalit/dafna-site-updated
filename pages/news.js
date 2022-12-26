@@ -35,10 +35,10 @@ export default function News() {
             </LeftArrowIconWrap>
         <Header>
             <Title>  
-                <Letter src={N} alt="N"></Letter>
-                <Letter src={E} alt="E"></Letter>
-                <Letter src={W} alt="W"></Letter>
-                <Letter src={S} alt="S"></Letter>
+                <Letter src={N} alt="N" priority></Letter>
+                <Letter src={E} alt="E" priority></Letter>
+                <Letter src={W} alt="W" priority ></Letter>
+                <Letter src={S} alt="S" priority></Letter>
             </Title>
         </Header>
         <Body>

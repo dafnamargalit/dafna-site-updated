@@ -12,19 +12,19 @@ export default function Navbar(props) {
 
   return (
         <WrapLogo>
-            <Link href="/dates" style={{ textDecoration: 'none' }}>
+            <Link href="/dates" style={{ textDecoration: 'none' }} priority>
                 <Letters src={D} alt="D" {...props}/>
             </Link>
-            <Link href="/apparel" style={{ textDecoration: 'none' }}>
+            <Link href="/apparel" style={{ textDecoration: 'none' }} priority>
                 <Letters src={AY} alt="A" {...props}/>
             </Link>
-            <Link href="/footage" style={{ textDecoration: 'none' }}>
+            <Link href="/footage" style={{ textDecoration: 'none' }} priority>
                 <Letters src={F} alt="F" {...props}/>
             </Link>
-            <Link href="/news" style={{ textDecoration: 'none' }}>
+            <Link href="/news" style={{ textDecoration: 'none' }} priority>
                 <Letters src={N} alt="N" {...props}/>
             </Link>
-            <Link href="/about" style={{ textDecoration: 'none' }}>
+            <Link href="/about" style={{ textDecoration: 'none' }} priority>
                 <Letters src={AP} alt="A" {...props}/>
             </Link>
         </WrapLogo>

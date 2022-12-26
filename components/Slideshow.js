@@ -57,6 +57,7 @@ export default function Slideshow(props) {
           <Slide
             src={isMobile ? slide.mobile : slide.image}
             alt=""
+            priority
           />
         </Link>)  
     )}
