@@ -59,7 +59,7 @@ const Container = styled.div`
 const NavbarHeader = styled.div`
     width: 50px;
     top: 0px;
-    margin: 5vh;
+    margin: 7vh;;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,7 +111,12 @@ const LeftArrowIcon = styled(IconLeftArrow)`
     &:hover {
         stroke: ${theme.COLOR.HOT_PINK};
     }
+    @media (max-width: 800px) {
+        width: 30px;
+        height: 30px;
+    }
 `;
+
 
 
 const Title = styled.div`
@@ -184,10 +189,4 @@ const Description = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
-    position: absolute;
-    bottom: 0;
-
-    @media (max-width: 900px) {
-        bottom: -30px;
-    }
 `;

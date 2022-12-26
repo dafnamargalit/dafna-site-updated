@@ -59,7 +59,7 @@ const NewsWrap = styled.div`
 const NavbarHeader = styled.div`
     width: 50px;
     top: 0px;
-    margin: 5vh;
+    margin: 7vh;;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,5 +155,9 @@ const LeftArrowIcon = styled(IconLeftArrow)`
     cursor: pointer;
     &:hover {
         stroke: ${theme.COLOR.HOT_PINK};
+    }
+    @media (max-width: 800px) {
+        width: 30px;
+        height: 30px;
     }
 `;
