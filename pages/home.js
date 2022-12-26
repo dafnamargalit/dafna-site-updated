@@ -1,3 +1,4 @@
+import Footer from 'components/Footer';
 import Modal from 'components/Modal';
 import Navbar from 'components/Navbar';
 import ProjectIcon from 'components/ProjectIcon';
@@ -38,6 +39,9 @@ export default function Home() {
         <Modal show={modal} onClose={() => handleClose()} />
         <Navbar />
       </Content>
+        <FooterWrap>
+          <Footer />
+        </FooterWrap>
       </Container>
   )
 }
@@ -71,3 +75,12 @@ const Content = styled.div`
   z-index: 9999;
 `;
 
+const FooterWrap = styled.div`
+display: flex;
+  justify-content: center;
+  align-items: center;
+ position: absolute;
+  bottom: 50px;
+  width: 100vw;
+  z-index: 10000;
+`;
