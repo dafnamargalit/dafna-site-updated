@@ -15,7 +15,7 @@ Run the following commands (make sure you have node and your package manager of 
 ```
 git clone https://github.com/dafnamargalit/dafna-site.git
 
-cd dafna-site
+cd dafna-site-updated
 
 yarn install 
 
