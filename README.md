@@ -13,7 +13,7 @@ You want to use this code? No problem!
 Run the following commands (make sure you have node and your package manager of choice):
 
 ```
-git clone https://github.com/dafnamargalit/dafna-site.git
+git clone https://github.com/dafnamargalit/dafna-site-updated.git
 
 cd dafna-site-updated
 
