@@ -17,7 +17,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import { theme } from 'theme';
 
-const images = [{image: slide1, mobile: slide1m, link: 'https://dafna.rocks/games'}, {image: slide3, mobile: slide3m, link: 'https://shop.dafna.rocks/product/when-i-was-with-you-vinyl'},{image: slide2, mobile: slide2m, link: 'https://shop.dafna.rocks/product/8nights-t-shirt'}];
+const images = [{image: slide2, mobile: slide2m, link: 'https://new.hotelcafe.com/event/dafna/'}, {image: slide3, mobile: slide3m, link: 'https://shop.dafna.rocks/product/when-i-was-with-you-vinyl'},{image: slide1, mobile: slide1m, link: 'https://dafna.rocks/games'}];
 
 
 export default function News() {

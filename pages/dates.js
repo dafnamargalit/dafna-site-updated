@@ -63,11 +63,14 @@ export default function Dates() {
                         (
                             <Nothing>
                                 <ShowLocation> No Upcoming Tour Dates :-( </ShowLocation>
-                                <ShowLocation>Book me:</ShowLocation>
-                                <ShowLocation><a href="mailto: bookings@dafna.rocks" style={{ color: theme.COLOR.YELLOW }}> bookings@dafna.rocks</a></ShowLocation>
                             </Nothing>
                         )
                     }
+                                               <Nothing>
+                                
+                                <ShowLocation>Book me:</ShowLocation>
+                                <ShowLocation><a href="mailto: bookings@dafna.rocks" style={{ color: theme.COLOR.YELLOW }}> bookings@dafna.rocks</a></ShowLocation>
+                            </Nothing>
                 </Body>
             </Content>
         </DatesWrap>
