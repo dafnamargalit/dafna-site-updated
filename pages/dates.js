@@ -13,10 +13,10 @@ import { theme } from 'theme';
 
 const shows = [
     {
-        title: 'Adam Melchor with Dafna at Gothic Theatre',
-        date: 'Jan 28th 2022',
-        location: 'Englewood, CO',
-        link: 'https://link.seated.com/cbe5f762-798d-470f-91c4-ede2be4fbe89'
+        title: 'Dafna at Hotel Cafe',
+        date: 'June 1st 2023',
+        location: 'Los Angeles, CA',
+        link: 'https://new.hotelcafe.com/event/dafna/'
     },
       
 ]
