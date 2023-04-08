@@ -10,16 +10,16 @@ import styled from 'styled-components';
 
 export default function Home() {
 
-  const [modal, setModal] = useState(true);
+  const [modal, setModal] = useState(false);
   
   	useEffect(() => {
-    if(localStorage.getItem('seen') === 'true'){
-      localStorage.setItem('seen', 'true');
-      setModal(false);
-    }
+      if(localStorage.getItem('seen') !== 'true') {
+        setModal(true);
+      }
     });
 
     const handleClose = () => {
+      localStorage.setItem('seen', 'true');
       setModal(false);
     };
 
