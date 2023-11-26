@@ -18,6 +18,21 @@ export default function Index() {
           href="images/merch.png"
           as="image"
         />
+        <link
+          rel="preload"
+          href="images/daf.png"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="images/daf2.png"
+          as="image"
+        />
+                <link
+          rel="preload"
+          href="images/daf3.png"
+          as="image"
+        />
       </Head>
        {clicked ? <Text>ENTERING...</Text> : 
        <Link href="/home">
