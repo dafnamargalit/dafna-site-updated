@@ -38,7 +38,7 @@ export default function Apparel() {
         </Header>
         <Body>
 
-           <MerchImage src={merch} alt="" priority/>
+           <MerchImage src={merch} alt="" priority />
 
            <TextLink href="https://shop.dafna.rocks">
                 VISIT MERCH STORE  <span style={{fontFamily: "sans-serif"}}>&#8594;</span>

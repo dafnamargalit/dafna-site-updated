@@ -13,10 +13,10 @@ import { theme } from 'theme';
 
 const shows = [
     {
-        title: 'Dafna at Hotel Cafe',
-        date: 'June 1st 2023',
+        title: 'Madeline The Person w/ Dafna at The Moroccan Lounge',
+        date: 'Dec 7th 2023',
         location: 'Los Angeles, CA',
-        link: 'https://new.hotelcafe.com/event/dafna/'
+        link: 'https://www.ticketmaster.com/madeline-the-person-los-angeles-california-12-07-2023/event/09005F35F28047BC'
     },
       
 ]

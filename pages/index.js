@@ -13,6 +13,11 @@ export default function Index() {
         <title>Dafna</title>
         <meta name="description" content="Welcome to Dafna's Website" />
          <link rel="shortcut icon" href="/D-square.png" />
+         <link
+          rel="preload"
+          href="images/merch.png"
+          as="image"
+        />
       </Head>
        {clicked ? <Text>ENTERING...</Text> : 
        <Link href="/home">

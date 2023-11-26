@@ -42,7 +42,7 @@ export default function About(){
                     <DafProfPic src={daf3} priority/>  
                 </PictureWrap>
         <Description>
-           hi! welcome to my website. i made it all by myself! i'm a 22 year old singer/songwriter and producer working as a software engineer in los angeles (but i'm originally from boulder colorado). i love making music and coding and creating pretty much anything you might find on this website. go stream my music, play my games, watch my videos and buy my merch! love you!
+           hi! welcome to my website. i made it all by myself! i'm a 23 year old singer/songwriter and producer working as a software engineer in los angeles (but i'm originally from boulder colorado). i love making music and coding and creating pretty much anything you might find on this website. go stream my music, play my games, watch my videos and buy my merch! love you!
         </Description>
             </Content>  
         </Container>
