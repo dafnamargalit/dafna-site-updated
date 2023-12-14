@@ -12,12 +12,12 @@ import styled from 'styled-components';
 import { theme } from 'theme';
 
 const shows = [
-    {
-        title: 'Madeline The Person w/ Dafna at The Moroccan Lounge',
-        date: 'Dec 7th 2023',
-        location: 'Los Angeles, CA',
-        link: 'https://www.ticketmaster.com/madeline-the-person-los-angeles-california-12-07-2023/event/09005F35F28047BC'
-    },
+    // {
+    //     title: 'Madeline The Person w/ Dafna at The Moroccan Lounge',
+    //     date: 'Dec 7th 2023',
+    //     location: 'Los Angeles, CA',
+    //     link: 'https://www.ticketmaster.com/madeline-the-person-los-angeles-california-12-07-2023/event/09005F35F28047BC'
+    // },
       
 ]
 
