@@ -12,12 +12,12 @@ import styled from 'styled-components';
 import { theme } from 'theme';
 
 const shows = [
-    // {
-    //     title: 'Madeline The Person w/ Dafna at The Moroccan Lounge',
-    //     date: 'Dec 7th 2023',
-    //     location: 'Los Angeles, CA',
-    //     link: 'https://www.ticketmaster.com/madeline-the-person-los-angeles-california-12-07-2023/event/09005F35F28047BC'
-    // },
+    {
+        title: 'Velvet Trip w/ Dafna, Micra, Sugar Soap',
+        date: 'March 16th 2024',
+        location: 'Sydney, NSW, Australia',
+        link: 'https://www.moshtix.com.au/v2/event/velvet-trip/162054?skin=MarysSYD'
+    },
       
 ]
 
