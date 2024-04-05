@@ -12,12 +12,12 @@ import styled from 'styled-components';
 import { theme } from 'theme';
 
 const shows = [
-    {
-        title: 'Velvet Trip w/ Dafna, Micra, Sugar Soap',
-        date: 'March 16th 2024',
-        location: 'Sydney, NSW, Australia',
-        link: 'https://www.moshtix.com.au/v2/event/velvet-trip/162054?skin=MarysSYD'
-    },
+    // {
+    //     title: 'Velvet Trip w/ Dafna, Micra, Sugar Soap',
+    //     date: 'March 16th 2024',
+    //     location: 'Sydney, NSW, Australia',
+    //     link: 'https://www.moshtix.com.au/v2/event/velvet-trip/162054?skin=MarysSYD'
+    // },
       
 ]
 

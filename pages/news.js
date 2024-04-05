@@ -2,12 +2,10 @@ import Navbar from 'components/Navbar';
 import Slideshow from 'components/Slideshow';
 import StarrySkies from 'components/Three/StarrySkies';
 import { IconLeftArrow } from 'icons';
-import slide1m from 'images/SLIDE-1-MOBILE.png';
-import slide1 from 'images/SLIDE-1.png';
+import slide1 from 'images/SLIDE-1.JPG';
+import slide1m from 'images/SLIDE-1-MOBILE.JPG';
 import slide2m from 'images/SLIDE-2-MOBILE.png';
 import slide2 from 'images/SLIDE-2.png';
-import slide3m from 'images/SLIDE-3-MOBILE.png';
-import slide3 from 'images/SLIDE-3.png';
 import E from 'letters/E-G.svg';
 import N from 'letters/N.svg';
 import S from 'letters/S-G.svg';
@@ -17,7 +15,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import { theme } from 'theme';
 
-const images = [{image: slide3, mobile: slide3m, link: 'https://shop.dafna.rocks/product/when-i-was-with-you-vinyl'},{image: slide1, mobile: slide1m, link: 'https://dafna.rocks/games'}];
+const images = [{image: slide1, mobile: slide1m, link: 'https://shop.dafna.rocks/collections/the-paradox-of-choice'},{image: slide2, mobile: slide2m, link: 'https://dafna.rocks/games'}];
 
 
 export default function News() {
