@@ -14,7 +14,7 @@ import { theme } from 'theme';
 const shows = [
     {
         title: 'Dafna - THE PARADOX OF CHOICE Virtual Album Release Party',
-        date: 'May 24th 2024',
+        date: 'Stream whenever!',
         location: 'Online',
         link: 'https://vier.live/act/the-paradox-of-choice'
     },
