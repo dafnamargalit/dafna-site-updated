@@ -18,7 +18,7 @@ export default function Footer(){
             <Link href="https://instagram.com/dafnamusic" style={{textDecoration:'none'}}>
             <FooterIcon src={instagram} alt="insta"></FooterIcon>
             </Link>
-            <Link href="https://twitter.com/dafnamusic" style={{textDecoration:'none'}}>
+            <Link href="https://twitter.com/dafnarocks" style={{textDecoration:'none'}}>
             <FooterIcon src={twitter} alt="twit"></FooterIcon>
             </Link>
             <Link href="https://github.com/dafnamargalit" style={{textDecoration:'none'}}>
