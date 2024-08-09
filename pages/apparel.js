@@ -1,3 +1,4 @@
+import Layout from 'components/Layout';
 import Navbar from 'components/Navbar';
 import StarrySkies from 'components/Three/StarrySkies';
 import { IconLeftArrow } from 'icons';
@@ -14,26 +15,28 @@ import { theme } from 'theme';
 
 export default function Apparel() {
     return(
+    <Layout>
         <Content>
-        <Header>
-            <Title>
-                <Letter src={A}></Letter>
-                <Letter src={P}></Letter>
-                <Letter src={P}></Letter>
-                <Letter src={A}></Letter>
-                <Letter src={R}></Letter>
-                <Letter src={E}></Letter>
-                <Letter src={L}></Letter>
-            </Title>
-        </Header>
-        <Body>
-           <MerchImage src={merch} alt="" priority />
+            <Header>
+                <Title>
+                    <Letter src={A}></Letter>
+                    <Letter src={P}></Letter>
+                    <Letter src={P}></Letter>
+                    <Letter src={A}></Letter>
+                    <Letter src={R}></Letter>
+                    <Letter src={E}></Letter>
+                    <Letter src={L}></Letter>
+                </Title>
+            </Header>
+            <Body>
+            <MerchImage src={merch} alt="" priority />
 
-           <TextLink href="https://shop.dafna.rocks">
-                VISIT MERCH STORE  <span style={{fontFamily: "sans-serif"}}>&#8594;</span>
-            </TextLink>
-        </Body>
+            <TextLink href="https://shop.dafna.rocks">
+                    VISIT MERCH STORE  <span style={{fontFamily: "sans-serif"}}>&#8594;</span>
+                </TextLink>
+            </Body>
         </Content>
+    </Layout>
     )
 }
 

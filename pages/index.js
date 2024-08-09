@@ -1,7 +1,6 @@
-import Footer from 'components/Footer';
+import Layout from 'components/Layout';
 import Logo from 'components/Logo';
 import Modal from 'components/Modal';
-import Navbar from 'components/Navbar';
 import ProjectIcon from 'components/ProjectIcon';
 import VideoGame from 'images/ily.png';
 import Head from 'next/head';
@@ -24,6 +23,7 @@ export default function Home() {
     };
 
   return (
+    <Layout>
       <Content>
       <Head>
         <title>Dafna</title>
@@ -36,6 +36,7 @@ export default function Home() {
         <Modal show={modal} onClose={() => handleClose()} />
         <Logo />
       </Content>
+    </Layout>
   )
 }
 

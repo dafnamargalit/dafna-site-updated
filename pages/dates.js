@@ -1,3 +1,4 @@
+import Layout from 'components/Layout';
 import Navbar from 'components/Navbar';
 import StarrySkies from 'components/Three/StarrySkies';
 import { IconLeftArrow } from 'icons';
@@ -22,6 +23,7 @@ const shows = [
 
 export default function Dates() {
     return (
+        <Layout>
             <Content>
                 <Header>
                     <Title>
@@ -62,6 +64,7 @@ export default function Dates() {
                             </Nothing>
                 </Body>
             </Content>
+        </Layout>
     )
 }
 

@@ -12,7 +12,7 @@ export default function Navbar(props) {
     const [isHome, setIsHome] = useState(true);
     
     useEffect(() => {
-        if (router.pathname === "/") {
+        if (router.pathname === "/" || router.pathname === "/games") {
             setIsHome(true);
         } else {
             setIsHome(false);

@@ -14,27 +14,30 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styled from 'styled-components';
 import { theme } from 'theme';
+import Layout from 'components/Layout';
 
 const images = [{image: slide1, mobile: slide1m, link: 'https://shop.dafna.rocks/collections/the-paradox-of-choice'},{image: slide2, mobile: slide2m, link: 'https://dafna.rocks/games'}];
 
 
 export default function News() {
     return(
-        <Content>
-        <Header>
-            <Title>  
-                <Letter src={N} alt="N" priority></Letter>
-                <Letter src={E} alt="E" priority></Letter>
-                <Letter src={W} alt="W" priority ></Letter>
-                <Letter src={S} alt="S" priority></Letter>
-            </Title>
-        </Header>
-        <Body>
-            <ImageWrap>
-                <Slideshow slides={images} delay="3500"></Slideshow>
-           </ImageWrap>
-        </Body>
-        </Content>
+        <Layout>
+            <Content>
+            <Header>
+                    <Title>  
+                        <Letter src={N} alt="N" priority></Letter>
+                        <Letter src={E} alt="E" priority></Letter>
+                        <Letter src={W} alt="W" priority ></Letter>
+                        <Letter src={S} alt="S" priority></Letter>
+                    </Title>
+                </Header>
+                <Body>
+                    <ImageWrap>
+                        <Slideshow slides={images} delay="3500"></Slideshow>
+                </ImageWrap>
+                </Body>
+                </Content>
+        </Layout>
     )
 }
 

@@ -1,11 +1,9 @@
-import styled, { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
 import { AnimatePresence } from "framer-motion"
 import Footer from "components/Footer";
 import StarrySkies from 'components/Three/StarrySkies';
 import Navbar from "components/Navbar";
-import { IconLeftArrow } from "icons";
 import { theme } from 'theme';
-import Link from "next/link";
 
 const GlobalStyle = createGlobalStyle`
 html, body {
@@ -38,16 +36,18 @@ export default function App({ Component, pageProps }) {
   return (
     <>
     <GlobalStyle />
-    <AnimatePresence mode="wait" initial={false}>
+    <ThemeProvider theme={theme}>
     <Container>
       <StarrySkies />
       <Navbar />
-      <Component {...pageProps} />
+      <AnimatePresence mode="wait" initial={false}>
+        <Component {...pageProps} />
+      </AnimatePresence>
       <FooterWrap>
       <Footer />
     </FooterWrap>
     </Container>
-  </AnimatePresence>
+  </ThemeProvider>
   </>
   )
 }

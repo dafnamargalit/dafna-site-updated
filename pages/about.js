@@ -11,9 +11,11 @@ import styled from "styled-components";
 import { theme } from "theme";
 import profile from 'images/profile.png';
 import profile2 from "images/profile2.png";
+import Layout from 'components/Layout';
 
 export default function About(){
     return (
+    <Layout>
         <Content>
             <Title>
                 <Letter src={A}></Letter>
@@ -29,6 +31,7 @@ export default function About(){
                 </Description>
             </Row>
         </Content>  
+    </Layout>
     )
 }
 

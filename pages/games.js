@@ -1,3 +1,4 @@
+import Layout from 'components/Layout';
 import StarrySkies from 'components/Three/StarrySkies';
 import { IconLeftArrow } from 'icons';
 import Head from 'next/head';
@@ -49,6 +50,7 @@ export default function Games(props) {
     // };
 
     return (
+    <Layout>
       <Container>
         <Head>
             <title>Dafna - Games</title>
@@ -85,6 +87,7 @@ export default function Games(props) {
          <SpotifyEmbed src="https://open.spotify.com/embed/album/3z1mhGTHvcCKbglmGsCS4y?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></SpotifyEmbed>
          </Content>
       </Container>
+      </Layout>
     );
 }
 

@@ -14,21 +14,23 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { IconLeftArrow } from 'icons';
 import { theme } from 'theme';
+import Layout from 'components/Layout';
 
 export default function Footage() {
     return(
+    <Layout>
         <Content>
-        <Header>
-             <Title> 
-                <Letter src={F} alt="F" priority />
-                <Letter src={O} alt="O" priority />
-                <Letter src={O} alt="O" priority />
-                <Letter src={T} alt="T" priority />
-                <Letter src={A} alt="A" priority />
-                <Letter src={G} alt="G" priority />
-                <Letter src={E} alt="E" priority />
-            </Title>
-        </Header>
+            <Header>
+                <Title> 
+                    <Letter src={F} alt="F" priority />
+                    <Letter src={O} alt="O" priority />
+                    <Letter src={O} alt="O" priority />
+                    <Letter src={T} alt="T" priority />
+                    <Letter src={A} alt="A" priority />
+                    <Letter src={G} alt="G" priority />
+                    <Letter src={E} alt="E" priority />
+                </Title>
+            </Header>
             <VideoWrap>
                 <Frame src={frame} width={"100%"}/>
                 <YoutubeEmbed embedId="dzfj-yKgIPE"></YoutubeEmbed>
@@ -37,6 +39,7 @@ export default function Footage() {
                 Watch More <span>&#160;</span> <span style={{fontFamily: "sans-serif"}}>&#8594;</span>
             </TextLink>
         </Content>
+    </Layout>
     )
 }
 
