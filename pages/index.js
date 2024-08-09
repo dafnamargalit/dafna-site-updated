@@ -1,75 +1,63 @@
+import Footer from 'components/Footer';
+import Logo from 'components/Logo';
+import Modal from 'components/Modal';
+import Navbar from 'components/Navbar';
+import ProjectIcon from 'components/ProjectIcon';
+import VideoGame from 'images/ily.png';
 import Head from 'next/head';
-import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-export default function Index() {
+export default function Home() {
 
-  const [clicked, setClicked] = useState(false);
+  const [modal, setModal] = useState(false);
+  
+  	useEffect(() => {
+      if(localStorage.getItem('seen') !== 'true') {
+        setModal(true);
+      }
+    });
+
+    const handleClose = () => {
+      localStorage.setItem('seen', 'true');
+      setModal(false);
+    };
 
   return (
-      <Container>
-        <Head>
+      <Content>
+      <Head>
         <title>Dafna</title>
         <meta name="description" content="Welcome to Dafna's Website" />
          <link rel="shortcut icon" href="/D-square.png" />
-         <link
-          rel="preload"
-          href="images/merch.png"
-          as="image"
-        />
-        <link
-          rel="preload"
-          href="images/daf.png"
-          as="image"
-        />
-        <link
-          rel="preload"
-          href="images/daf2.png"
-          as="image"
-        />
-                <link
-          rel="preload"
-          href="images/daf3.png"
-          as="image"
-        />
       </Head>
-       {clicked ? <Text>ENTERING...</Text> : 
-       <Link href="/home">
-        <WelcomeButton onClick={() => setClicked(true)}>
-         CLICK HERE TO ENTER DAFNA'S WEBSITE
-        </WelcomeButton>
-        </Link>}
-
-      </Container>
+        <VideoGameButtonWrap>
+            <ProjectIcon src={VideoGame} href="/games"/>
+        </VideoGameButtonWrap>
+        <Modal show={modal} onClose={() => handleClose()} />
+        <Logo />
+      </Content>
   )
 }
 
-const Container = styled.div`
-  margin: 0;
-  padding: 0;
+const VideoGameButtonWrap = styled.div`
+  position: absolute;
   height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #000000;
-`;
+  justify-content: flex-end;
 
-const WelcomeButton = styled.button`
-  background: #000000;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  padding: 10px 20px;
-  font-family: "Courier New", Courier, monospace;
-  &:hover {
-    cursor: pointer;
-    background: #1e1f1f;
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 
-const Text = styled.div`
-  color: #ffffff;
-  text-decoration: none;
-   font-family: "Courier New", Courier, monospace;
+
+const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100vw;
+  height: 100vh;
 `;

@@ -1,56 +1,63 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import AP from '/letters/A-P.svg';
-import AY from '/letters/A-Y.svg';
-import D from '/letters/D.svg';
-import F from '/letters/F.svg';
-import N from '/letters/N.svg';
+import { theme } from 'theme';
+import Logo from 'components/Logo';
+import { IconLeftArrow } from 'icons';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 
 export default function Navbar(props) {
 
-  return (
-        <WrapLogo>
-            <Link href="/dates" style={{ textDecoration: 'none' }} priority>
-                <Letters src={D} alt="D" {...props}/>
-            </Link>
-            <Link href="/apparel" style={{ textDecoration: 'none' }} priority>
-                <Letters src={AY} alt="A" {...props}/>
-            </Link>
-            <Link href="/footage" style={{ textDecoration: 'none' }} priority>
-                <Letters src={F} alt="F" {...props}/>
-            </Link>
-            <Link href="/news" style={{ textDecoration: 'none' }} priority>
-                <Letters src={N} alt="N" {...props}/>
-            </Link>
-            <Link href="/about" style={{ textDecoration: 'none' }} priority>
-                <Letters src={AP} alt="A" {...props}/>
-            </Link>
-        </WrapLogo>
+    const router = useRouter();
+    const [isHome, setIsHome] = useState(true);
+    
+    useEffect(() => {
+        if (router.pathname === "/") {
+            setIsHome(true);
+        } else {
+            setIsHome(false);
+        }
+    }, [router.pathname]);
+    
+    return (
+        !isHome ? <WrapNavBar>
+            <LeftArrowIconWrap>
+                <Link href="/">
+                    <LeftArrowIcon />
+                </Link>
+            </LeftArrowIconWrap>
+            <Logo width={'5vh'} padding={'0.2em'}/>
+            <LeftArrowIconWrap/>
+        </WrapNavBar> : <></>
   )
 }
 
-const WrapLogo = styled.div`
-  display: flex;
-	align-items: center;
-	justify-content: center;
+const WrapNavBar = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 1em 0;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
 `;
 
-const Letters = styled(Image)`
-	will-change: transform;
-	z-index: 1000;
-	width: ${props => props.width ? props.width : '17vh'};
-	padding: ${props => props.padding ? props.padding : '0.5em'};
-    height: auto;
-	transition: transform .2s;
-	&:hover{
-		transform: scale(1.2);
-	}
-
-	@media (max-width: 1024px) { 
-		width: 6vh;
-		padding: .2em;
-	}
+const LeftArrowIconWrap = styled.div`
+  width: 50px;
+  margin: 1em;
 `;
 
+const LeftArrowIcon = styled(IconLeftArrow)`
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    &:hover {
+        stroke: ${theme.COLOR.HOT_PINK};
+    }
+    @media (max-width: 800px) {
+        width: 30px;
+        height: 30px;
+    }
+`;

@@ -33,6 +33,8 @@ export default function Footer(){
 
 const FooterWrap = styled.div`
     display: flex;
+    align-items: center;
+    padding: 1em 0;
 `
 
 const FooterIcon = styled(Image)`
@@ -45,4 +47,8 @@ const FooterIcon = styled(Image)`
     &:hover{
         -webkit-filter: brightness(70%); 
     }
+`
+
+const PrivacyPolicy = styled(Link)`
+    text-decoration: none;
 `

@@ -54,9 +54,8 @@ export default function Games(props) {
             <title>Dafna - Games</title>
             <meta name="description" content="Welcome to Dafna's Website" />
         </Head>
-        <StarrySkies />
         <LeftArrowIconWrap>
-            <Link href="/home">
+            <Link href="/">
                 <LeftArrowIcon />
             </Link>
         </LeftArrowIconWrap>

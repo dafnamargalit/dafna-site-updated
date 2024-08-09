@@ -20,17 +20,7 @@ const images = [{image: slide1, mobile: slide1m, link: 'https://shop.dafna.rocks
 
 export default function News() {
     return(
-        <NewsWrap>
-            <StarrySkies />
         <Content>
-             <NavbarHeader>
-                <Navbar width={"5vh"} padding={"0.2em"} />
-            </NavbarHeader>
-            <LeftArrowIconWrap>
-                <Link href="/home">
-                    <LeftArrowIcon />
-                </Link>
-            </LeftArrowIconWrap>
         <Header>
             <Title>  
                 <Letter src={N} alt="N" priority></Letter>
@@ -45,24 +35,8 @@ export default function News() {
            </ImageWrap>
         </Body>
         </Content>
-    </NewsWrap>
     )
 }
-
-const NewsWrap = styled.div`
-    height: 100vh;
-    width: 100vw;
-    overflow: scroll;
-`
-const NavbarHeader = styled.div`
-    width: 50px;
-    top: 0px;
-    margin: 7vh;;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10002;
-`;
 
 const Header = styled.div`
     display: flex;
@@ -105,27 +79,24 @@ const Body = styled.div`
 const Content = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
-    align-items: center;
     color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    z-index: 9999;
 `;
+
 
 const ImageWrap = styled.div`
     width: 60vw;
     @media (max-width: 768px){
-        width: 63vw;
+        width: 70vw;
     }
     @media (max-width: 500px){
-        width: 80vw;
+        width: 70vw;
     }
     @media (max-width: 400px){
-        width: 90vw;
+        width: 70vw;
     }
 `
 

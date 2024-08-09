@@ -29,8 +29,10 @@ export default function StarrySkies() {
 const Container = styled.div`
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
+  position: absolute;
+  z-index: -1000;
 `;
 
 const StyledCanvas = styled(Canvas)`

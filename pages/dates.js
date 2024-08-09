@@ -22,17 +22,7 @@ const shows = [
 
 export default function Dates() {
     return (
-        <DatesWrap>
-            <StarrySkies />
             <Content>
-            <NavbarHeader>
-                <Navbar width={"5vh"} padding={"0.2em"} />
-            </NavbarHeader>
-            <LeftArrowIconWrap>
-                <Link href="/home">
-                    <LeftArrowIcon />
-                </Link>
-            </LeftArrowIconWrap>
                 <Header>
                     <Title>
                         <Letter src={D} alt="D" priority/>
@@ -72,43 +62,22 @@ export default function Dates() {
                             </Nothing>
                 </Body>
             </Content>
-        </DatesWrap>
     )
 }
-
-const DatesWrap = styled.div`
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-`;
 
 const Letter = styled(Image)`
     width: 7vh;
     padding: 0.25vh;
 `;
 
-const NavbarHeader = styled.div`
-    width: 50px;
-    top: 0px;
-    margin: 7vh;;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10002;
-`;
-
 const Content = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
-    align-items: center;
     color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    z-index: 9999;
 `;
 
 const Header = styled.div`

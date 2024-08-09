@@ -17,26 +17,16 @@ import { theme } from 'theme';
 
 export default function Footage() {
     return(
-        <FootageWrap>
-            <StarrySkies />
         <Content>
-        <NavbarHeader>
-            <Navbar width={"5vh"} padding={"0.2em"} />
-        </NavbarHeader>
-        <LeftArrowIconWrap>
-            <Link href="/home">
-                <LeftArrowIcon />
-            </Link>
-        </LeftArrowIconWrap>
         <Header>
              <Title> 
-                <Letter src={F} alt="F" priority></Letter>
-                <Letter src={O} alt="O" priority></Letter>
-                <Letter src={O} alt="O" priority></Letter>
-                <Letter src={T} alt="T" priority></Letter>
-                <Letter src={A} alt="A" priority></Letter>
-                <Letter src={G} alt="G" priority></Letter>
-                <Letter src={E} alt="E" priority></Letter>
+                <Letter src={F} alt="F" priority />
+                <Letter src={O} alt="O" priority />
+                <Letter src={O} alt="O" priority />
+                <Letter src={T} alt="T" priority />
+                <Letter src={A} alt="A" priority />
+                <Letter src={G} alt="G" priority />
+                <Letter src={E} alt="E" priority />
             </Title>
         </Header>
             <VideoWrap>
@@ -46,43 +36,18 @@ export default function Footage() {
             <TextLink href="https://www.youtube.com/channel/UCzPtND9EY5MkOepLzllAbiw">
                 Watch More <span>&#160;</span> <span style={{fontFamily: "sans-serif"}}>&#8594;</span>
             </TextLink>
-
         </Content>
-        </FootageWrap>
     )
 }
-
-
-const FootageWrap = styled.div`
-      margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vw;
-
-`;
-
-const NavbarHeader = styled.div`
-    width: 50px;
-    top: 0px;
-    margin: 7vh;;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10002;
-`;
 
 const Content = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
-    align-items: center;
     color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    z-index: 9999;
 `;
 
 const Header = styled.div`
@@ -91,7 +56,6 @@ const Header = styled.div`
     align-items: center;
     width: 100%;
     height: 10vh;
-    margin-bottom: 10vh;
     transition: all 0.5s ease 0s;
     user-select: none;
     @media (max-width: 800px){
@@ -107,6 +71,7 @@ const Title = styled.div`
     font-size: 24px;
     width: 100%;
     justify-content: center;
+    margin-bottom: 10vh;
     @media (max-width: 675px) {
     font-size: 20px;
     }
@@ -139,37 +104,16 @@ const TextLink = styled.a`
     &:hover{
         transform: scale(1.1);
     }
-    margin: 10vh;
+    margin-top: 10vh;
     align-items: center;
     justify-content: center;
     display:flex;
 `
 
 const Letter = styled(Image)`
-    width: 7vh;
+    width: 5vh;
     padding: 0.25vh;
     @media (max-width: 400px){
         width: 5vh;
     }
 `
-const LeftArrowIconWrap = styled.div`
-  width: 50px;
-  position: absolute;
-  top: 30px;
-  left: 0;
-  margin: 1em;
-  z-index: 10002;
-`;
-
-const LeftArrowIcon = styled(IconLeftArrow)`
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    &:hover {
-        stroke: ${theme.COLOR.HOT_PINK};
-    }
-    @media (max-width: 800px) {
-        width: 30px;
-        height: 30px;
-    }
-`;
