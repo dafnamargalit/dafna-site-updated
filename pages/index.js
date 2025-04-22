@@ -17,6 +17,10 @@ export default function Home() {
       }
     });
 
+    useEffect(() => {
+      window.location.href = 'https://dafna.music'
+    }, [])
+
     const handleClose = () => {
       localStorage.setItem('seen', 'true');
       setModal(false);
